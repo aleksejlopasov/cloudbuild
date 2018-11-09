@@ -6,4 +6,4 @@ steps:
 artifacts:
   objects:
     location: 'gs://olopa-vertigo-es-tests-1/'
-    paths: ['HelloWorld.class', 'Greeter.class']
+    paths: ['gs-maven/initial/target/classes/hello/HelloWorld.class', 'gs-maven/initial/target/classes/hello/Greeter.class']
