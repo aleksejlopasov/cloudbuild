@@ -1,0 +1,9 @@
+steps:
+- name: 'gcr.io/cloud-builders/git'
+  args: ['clone', 'https://github.com/spring-guides/gs-maven.git']
+- name: 'gcr.io/cloud-builders/mvn'
+  args: ['compile', '-f', 'initial/pom.xml']
+artifacts:
+  objects:
+    location: 'gs://olopa-vertigo-es-tests-1/'
+    paths: ['HelloWorld.class', 'Greeter.class']
